@@ -6,9 +6,9 @@ if len(exe_files) == 0:
     print("No files found")
     exit()
 
-confirm = input(print("Do you want to delete the following files?").strip().lower())
 for file in exe_files:
     print(file)
+confirm = input("Do you want to delete the following files?").strip().lower()
 
 if confirm == "yes":
     for file in exe_files:
